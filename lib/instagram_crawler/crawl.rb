@@ -13,10 +13,10 @@ module InstagramCrawler
     LINK_URL_PREFIX = 'http://instagr.am/p/'
 
     @@hashtag = ''
-    @@limit = 12
+    @@limit = ''
     @@is_user = false
 
-    def self.get_info_hash(hashtag:, limit: @@limit, is_user: @@is_user)
+    def self.get_info_hash(hashtag:, limit:, is_user: @@is_user)
       self.hashtag = hashtag
       self.limit = limit
       self.is_user = is_user
